@@ -22,6 +22,7 @@ class BookController extends Controller
             'author' => $request['author'],
             'released_at' => $request['released_at'],
         ]);
+        
 
         return redirect('/books/' . $book->id);
     }
